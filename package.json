@@ -1,0 +1,28 @@
+{
+  "name": "FileAnalysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoredProjects/FileAnalysis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoredProjects/FileAnalysis/issues"
+  },
+  "homepage": "https://github.com/BoredProjects/FileAnalysis#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-fileupload": "^1.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
