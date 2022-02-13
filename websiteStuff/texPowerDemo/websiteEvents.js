@@ -1,6 +1,7 @@
-var button = document.getElementById("fileSubmit") 
+var button = document.getElementById("submitButton") 
+console.log(document)
 
-button.onclick = function(){
+window.onload = button.onclick = function(){
 
   const myForm = document.getElementById("inputForm")
   const inpFile = document.getElementById("inpFile")
