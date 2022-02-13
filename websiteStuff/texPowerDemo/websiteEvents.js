@@ -1,22 +1,24 @@
-const myForm = document.getElementById("inputForm")
-const inpFile = document.getElementById("inpFile")
+var button = document.getElementById("fileSubmit") 
 
-myForm.addEventListener("submit", e =>{
-  e.preventDefault();
+button.onclick = function(){
 
-  const endpoint = "upload.php";
-  const formData = new FormData;
+  const myForm = document.getElementById("inputForm")
+  const inpFile = document.getElementById("inpFile")
 
-  console.log("hi");
+  myForm.addEventListener("submit", e =>{
+    e.preventDefault();
 
-  formData.append("inpFile", inpFile.files[0]);
+    const endpoint = "upload.php";
+    const formData = new FormData;
 
-  fetch(endpoint, {
-    method: "post",
-    body: formData
+    formData.append("inpFile", inpFile.files[0]);
 
-  }).catch(console.error);
+    fetch(endpoint, {
+      method: "post",
+      body: formData
+
+    }).catch(console.error);
 
 
-});
-
+  });
+}
